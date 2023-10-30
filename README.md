@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **Flutter Dart**
 
-- 📫 How to reach me **surajyadav200701@gmail.com**
+- 📫 How to reach me **https://www.biodrop.io/account/manage/links**
 
 - 📄 Know about my experiences [https://app.luminpdf.com/viewer/6511b1a5d405f1f7b76bf260](https://app.luminpdf.com/viewer/6511b1a5d405f1f7b76bf260)
 
