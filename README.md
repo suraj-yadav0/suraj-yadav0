@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=suraj-yadav0" alt="suraj-yadav0" /></a> </p>
 
-- 🔭 I’m currently working on [AI Assistent]([https://github.com/suraj-yadav0/apna_kiryana](https://github.com/suraj-yadav0/ai_assistent)
+- 🔭 I’m currently working on [AI Assistent](https://github.com/suraj-yadav0/ai_assistent)
 
 - 🌱 I’m currently learning **Node Js**
 
