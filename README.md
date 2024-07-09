@@ -10,7 +10,7 @@
 - 🌱 I’m currently learning **AI**
 - 💬 Ask me about **Flutter **
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- 📄 Know about my experiences **[View Resume]([https://drive.google.com/file/d/1gTpRFw_ElK5T5khhjrCqX4011S-o0YtV/view?usp=drive_link](https://drive.google.com/file/d/1hYrcT_F0YI9CkvLpIrJMTOIyTrTI8yl-/view?usp=drive_link)**
+- 📄 Know about my experiences **[View Resume]([https://drive.google.com/file/d/1gTpRFw_ElK5T5khhjrCqX4011S-o0YtV/view?usp=drive_link](https://drive.google.com/file/d/1hYrcT_F0YI9CkvLpIrJMTOIyTrTI8yl-/view?usp=drive_link])**
 - ⚡ Fun fact **The first registered domain name was symbolics.com on March 15, 1985.**
 
 <div> <a href="https://twitter.com/surajya75007306" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
