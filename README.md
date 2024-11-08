@@ -8,7 +8,7 @@
 - 🔭 I’m currently working on [AI Assistent]( https://github.com/suraj-yadav0/ai_assistent)
 - 👯 I’m looking to collaborate on [Vyakhya AI]( https://github.com/suraj-yadav0/vyakhya_ai-main)
 - 🌱 I’m currently learning **AI**
-- 💬 Ask me about **Flutter , NODE JS  , Python **
+- 💬 Ask me about **Flutter , NODE JS  , Python**
 - 📫 How to reach me **surajyadav200701@gmail.com**
 - 📄 Know about my experiences [View Resume](https://drive.google.com/file/d/1ArGWAwo3xVAkW1cW1m2ZfpG9gmeJf9wk/view?usp=drive_link)
 - ⚡ Fun fact **The first registered domain name was symbolics.com on March 15, 1985.**
