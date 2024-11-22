@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=suraj-yadav0&theme=discord" alt="suraj-yadav0" /></a> </p>
 
-- 🔭 I’m currently working on [AI Assistent]( https://github.com/suraj-yadav0/ai_assistent)
+- 🔭 I’m currently working on [Caption IT]( https://github.com/suraj-yadav0/caption_it)
 - 👯 I’m looking to collaborate on [Vyakhya AI]( https://github.com/suraj-yadav0/vyakhya_ai-main)
 - 🌱 I’m currently learning **AI**
 - 💬 Ask me about **Flutter , NODE JS  , Python**
