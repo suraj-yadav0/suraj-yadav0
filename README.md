@@ -5,10 +5,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=suraj-yadav0&theme=discord" alt="suraj-yadav0" /></a> </p>
 
-- 🔭 I’m currently working on [Caption IT]( https://github.com/suraj-yadav0/caption_it)
-- 👯 I’m looking to collaborate on [VIHAN]( https://github.com/suraj-yadav0/vihan)
-- 🌱 I’m currently learning **AI**
-- 💬 Ask me about **Flutter , NODE JS  , Python**
+
+
+- 💬 Ask me about **Flutter , NODE JS  , Python , Odoo , Linux**
 - 📫 How to reach me **surajyadav200701@gmail.com**
 - 📄 Know about my experiences [View Resume](https://drive.google.com/file/d/1ArGWAwo3xVAkW1cW1m2ZfpG9gmeJf9wk/view?usp=drive_link)
 - ⚡ Fun fact **The first registered domain name was symbolics.com on March 15, 1985.**
