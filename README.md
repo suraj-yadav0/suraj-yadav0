@@ -7,7 +7,7 @@
 
 
 
-- 💬 Ask me about **Flutter , NODE JS  , Python , Odoo , Linux**
+- 💬 Ask me about **Flutter , NODE JS  , Python , Odoo , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
 - 📄 Know about my experiences [View Resume](https://drive.google.com/file/d/1ArGWAwo3xVAkW1cW1m2ZfpG9gmeJf9wk/view?usp=drive_link)
 - ⚡ Fun fact **The first registered domain name was symbolics.com on March 15, 1985.**
