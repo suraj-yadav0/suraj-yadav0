@@ -3,7 +3,7 @@
 <h3 align="center">Software Engineer: Bridging Vision and Reality</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=suraj-yadav0&label=Profile%20views&color=0e75b6&style=flat" alt="suraj-yadav0" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=suraj-yadav0&theme=discord" alt="suraj-yadav0" /></a> </p>
+<!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=suraj-yadav0&theme=discord" alt="suraj-yadav0" /></a> </p> -->
 
 
 
@@ -56,11 +56,11 @@
 </p>
 
 <h3 align="left">Stars</h3>
-<img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suraj-yadav0&layout=compact&theme=transparent" alt=suraj-yadav0 />
+<!-- <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suraj-yadav0&layout=compact&theme=transparent" alt=suraj-yadav0 />
 
-<p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=suraj-yadav0&show_icons=true&locale=en&theme=highcontrast" alt="suraj-yadav0" /></p>
+<!-- <p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=suraj-yadav0&show_icons=true&locale=en&theme=highcontrast" alt="suraj-yadav0" /></p>
 
-<p><img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" /></p>
+<p><img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" /></p> --> -->
 
 <!-- <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h3 align="center">Statistics</h3>
 <div align="center">
