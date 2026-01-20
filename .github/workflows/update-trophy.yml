@@ -2,9 +2,8 @@ name: Update GitHub Profile Trophy
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allows manual trigger
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -17,21 +16,34 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
         
-      - name: Generate Trophy
-        uses: soulteary/github-profile-trophy-action@main
-        with:
-          username: suraj-yadav0
-          theme: discord
-          column: 7
-          no-frame: false
-          output-path: assets/trophy.svg
+      - name: Create assets directory
+        run: mkdir -p assets
+        
+      - name: Download Trophy SVG
+        run: |
+          curl -L "https://github-profile-trophy.vercel.app/?username=suraj-yadav0&theme=discord&column=7&no-frame=false&margin-w=15&margin-h=15" \
+            -o assets/trophy.svg
+          
+      - name: Verify trophy file
+        run: |
+          if [ -f "assets/trophy.svg" ]; then
+            echo "✅ Trophy downloaded successfully"
+            ls -lh assets/trophy.svg
+          else
+            echo "❌ Trophy download failed"
+            exit 1
+          fi
           
       - name: Commit and Push Changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           git add assets/trophy.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🏆 Update GitHub Profile Trophy" && git push)
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🏆 Update GitHub Profile Trophy [$(date +'%Y-%m-%d')]"
+            git push
+          fi
