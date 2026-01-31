@@ -13,7 +13,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **YouTube was originally designed as a video dating site.**
+- ⚡ Fun fact **The first electronic computer, ENIAC, weighed 30 tons and took up 1800 square feet.**
 
 
 <div> <a href="https://twitter.com/surajya75007306" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
