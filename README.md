@@ -13,7 +13,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **Facebook's blue color scheme is because Mark Zuckerberg is red-green colorblind.**
+- ⚡ Fun fact **The average person blinks 20 times per minute, but only 7 times per minute when using a computer.**
 
 
 <div> <a href="https://twitter.com/surajya75007306" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
