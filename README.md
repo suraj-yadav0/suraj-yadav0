@@ -13,7 +13,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **The 'Save' icon is a floppy disk, which many young people have never seen.**
+- ⚡ Fun fact **The first Apple logo featured Sir Isaac Newton sitting under an apple tree.**
 
 
 <div> <a href="https://twitter.com/surajya75007306" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>
@@ -61,11 +61,11 @@
 </p>
 
 <!-- <h3 align="left">Stars</h3> -->
-<!-- <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suraj-yadav0&layout=compact&theme=transparent" alt=suraj-yadav0 />
+<!-- <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suraj-yadav0&layout=compact&theme=transparent" alt=suraj-yadav0 /> -->
 
- <p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=suraj-yadav0&show_icons=true&locale=en&theme=highcontrast" alt="suraj-yadav0" /></p>
+ <p>&nbsp;<img align="center" height="180em" src="https://github-readme-stats.vercel.app/api?username=suraj-yadav0&show_icons=true&locale=en&theme=highcontrast" alt="suraj-yadav0" /></p> 
 
-<p><img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" /></p> 
+<!-- <p><img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" /></p>  
 
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h3 align="center">Statistics</h3>
 <div align="center">
@@ -75,8 +75,10 @@
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=suraj-yadav0&theme=dark" height="180em" />
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=suraj-yadav0&theme=2077" height="180em" />
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=suraj-yadav0&theme=2077" height="180em" /> 
-</div>
-<!-- <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h2 align="left">⚡Activity Graph:</h2>
-<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=suraj-yadav0&theme=default"/> -->
+</div> 
 
+<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=suraj-yadav0&theme=default"/>  -->
+
+
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" />
