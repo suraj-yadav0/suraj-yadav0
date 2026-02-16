@@ -1,5 +1,64 @@
-The deployment is currently unavailable
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+  <defs>
+    <style>
+      .card-bg {
+        fill: #000000;
+        stroke: #e4e2e2;
+        stroke-width: 1;
+        rx: 4.5;
+      }
+      .card-title {
+        font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;
+        fill: #e4e2e2;
+        animation: fadeInAnimation 0.8s ease-in-out forwards;
+      }
+      .stat-label {
+        font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;
+        fill: #9f9f9f;
+      }
+      .stat-value {
+        font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;
+        fill: #e4e2e2;
+      }
+      .stat-icon {
+        font-size: 14px;
+      }
+      @keyframes fadeInAnimation {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </defs>
 
-DEPLOYMENT_PAUSED
+  <rect x="0.5" y="0.5" width="494" height="194" class="card-bg"/>
 
-cle1::9f8vs-1771210027057-87a984257626
+  <g transform="translate(0, 0)">
+    <text x="25" y="35" class="card-title">Suraj Yadav's GitHub Stats</text>
+    
+    <g transform="translate(25, 72)">
+      <text x="0" y="0" class="stat-icon">⭐</text>
+      <text x="25" y="0" class="stat-label">Total Stars Earned:</text>
+      <text x="435" y="0" class="stat-value" text-anchor="end">17</text>
+    </g>
+    <g transform="translate(25, 97)">
+      <text x="0" y="0" class="stat-icon">📝</text>
+      <text x="25" y="0" class="stat-label">Total Commits:</text>
+      <text x="435" y="0" class="stat-value" text-anchor="end">1.6k</text>
+    </g>
+    <g transform="translate(25, 122)">
+      <text x="0" y="0" class="stat-icon">🔀</text>
+      <text x="25" y="0" class="stat-label">Total PRs:</text>
+      <text x="435" y="0" class="stat-value" text-anchor="end">182</text>
+    </g>
+    <g transform="translate(25, 147)">
+      <text x="0" y="0" class="stat-icon">🔴</text>
+      <text x="25" y="0" class="stat-label">Total Issues:</text>
+      <text x="435" y="0" class="stat-value" text-anchor="end">24</text>
+    </g>
+    <g transform="translate(25, 172)">
+      <text x="0" y="0" class="stat-icon">📦</text>
+      <text x="25" y="0" class="stat-label">Contributed to:</text>
+      <text x="435" y="0" class="stat-value" text-anchor="end">2</text>
+    </g>
+  </g>
+</svg>
