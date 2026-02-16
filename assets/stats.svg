@@ -23,9 +23,20 @@
       .stat-icon {
         font-size: 14px;
       }
+      .rank-text {
+        font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;
+        font-weight: 700;
+      }
+      .rank-ring {
+        animation: rankAnimation 1s ease-in-out forwards;
+      }
       @keyframes fadeInAnimation {
         from { opacity: 0; }
         to { opacity: 1; }
+      }
+      @keyframes rankAnimation {
+        from { stroke-dashoffset: 251.3272; }
+        to { stroke-dashoffset: 102.9; }
       }
     </style>
   </defs>
@@ -38,27 +49,45 @@
     <g transform="translate(25, 72)">
       <text x="0" y="0" class="stat-icon">⭐</text>
       <text x="25" y="0" class="stat-label">Total Stars Earned:</text>
-      <text x="435" y="0" class="stat-value" text-anchor="end">17</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">17</text>
     </g>
     <g transform="translate(25, 97)">
       <text x="0" y="0" class="stat-icon">📝</text>
       <text x="25" y="0" class="stat-label">Total Commits:</text>
-      <text x="435" y="0" class="stat-value" text-anchor="end">1.6k</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">1.6k</text>
     </g>
     <g transform="translate(25, 122)">
       <text x="0" y="0" class="stat-icon">🔀</text>
       <text x="25" y="0" class="stat-label">Total PRs:</text>
-      <text x="435" y="0" class="stat-value" text-anchor="end">182</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">182</text>
     </g>
     <g transform="translate(25, 147)">
       <text x="0" y="0" class="stat-icon">🔴</text>
       <text x="25" y="0" class="stat-label">Total Issues:</text>
-      <text x="435" y="0" class="stat-value" text-anchor="end">24</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">24</text>
     </g>
     <g transform="translate(25, 172)">
       <text x="0" y="0" class="stat-icon">📦</text>
       <text x="25" y="0" class="stat-label">Contributed to:</text>
-      <text x="435" y="0" class="stat-value" text-anchor="end">2</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">2</text>
+    </g>
+    
+    <g transform="translate(0, 0)">
+      <!-- Background ring -->
+      <circle cx="425" cy="105" r="40"
+              fill="none" stroke="#333333" stroke-width="5" opacity="0.4"/>
+      <!-- Progress ring -->
+      <circle cx="425" cy="105" r="40"
+              fill="none" stroke="#F5A623" stroke-width="5"
+              stroke-dasharray="251.3272"
+              stroke-dashoffset="102.9"
+              stroke-linecap="round"
+              transform="rotate(-90 425 105)"
+              class="rank-ring"/>
+      <!-- Rank text -->
+      <text x="425" y="105" class="rank-text"
+            text-anchor="middle" dominant-baseline="central"
+            style="font-size: 28px; fill: #F5A623;">A</text>
     </g>
   </g>
 </svg>
