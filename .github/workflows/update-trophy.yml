@@ -27,12 +27,17 @@ jobs:
           path: assets/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download GitHub Stats SVG
-        run: |
-          curl -L --retry 3 --retry-delay 5 \
-            "https://github-readme-stats.vercel.app/api?username=suraj-yadav0&show_icons=true&locale=en&theme=highcontrast" \
-            -o assets/stats.svg
-          echo "✅ Stats SVG downloaded ($(wc -c < assets/stats.svg) bytes)"
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Generate GitHub Stats SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: suraj-yadav0
+          OUTPUT_PATH: assets/stats.svg
+        run: python generate_stats.py
 
       - name: Commit and Push Changes
         run: |
