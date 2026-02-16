@@ -80,6 +80,8 @@ def fetch_github_stats(username, token):
         "issues": user["issues"]["totalCount"],
         "contributed_to": user["repositoriesContributedTo"]["totalCount"],
         "reviews": contrib["totalPullRequestReviewContributions"],
+        "followers": user["followers"]["totalCount"],
+        "repos": user["repositories"]["totalCount"],
     }
 
 
@@ -92,9 +94,55 @@ def format_number(n):
     return str(n)
 
 
+def calculate_rank(stats):
+    """Calculate user rank based on stats, similar to github-readme-stats."""
+    import math
+
+    def log_norm(value, median, spread=1.0):
+        """Log-normal CDF approximation."""
+        if value <= 0:
+            return 0
+        log_val = math.log(value + 1)
+        log_med = math.log(median + 1)
+        z = (log_val - log_med) / spread
+        # Approximate CDF using tanh
+        return 0.5 * (1 + math.tanh(z * 0.7))
+
+    # Weighted score based on typical GitHub user medians
+    score = (
+        log_norm(stats["commits"], 250, 1.5) * 0.30 +
+        log_norm(stats["prs"], 50, 1.5) * 0.20 +
+        log_norm(stats["issues"], 25, 1.5) * 0.10 +
+        log_norm(stats["reviews"], 10, 1.5) * 0.10 +
+        log_norm(stats["stars"], 50, 1.5) * 0.15 +
+        log_norm(stats["followers"], 10, 1.5) * 0.05 +
+        log_norm(stats["contributed_to"], 5, 1.0) * 0.10
+    )
+
+    # Map score to ranks
+    ranks = [
+        (0.95, "S+"),
+        (0.85, "S"),
+        (0.75, "A++"),
+        (0.65, "A+"),
+        (0.50, "A"),
+        (0.35, "B+"),
+        (0.20, "B"),
+    ]
+    rank_label = "C"
+    for threshold, label in ranks:
+        if score >= threshold:
+            rank_label = label
+            break
+
+    return rank_label, min(score, 1.0)
+
+
 def generate_svg(stats):
-    """Generate an SVG card matching the highcontrast theme."""
+    """Generate an SVG card matching the highcontrast theme with rank badge."""
     name = stats["name"]
+    rank_label, rank_score = calculate_rank(stats)
+
     items = [
         ("⭐", "Total Stars Earned", stats["stars"]),
         ("📝", "Total Commits", stats["commits"]),
@@ -107,6 +155,7 @@ def generate_svg(stats):
     card_height = 195
     padding_x = 25
     title_y = 35
+    stats_area_width = 310
 
     # Build stat rows
     stat_rows = ""
@@ -116,7 +165,45 @@ def generate_svg(stats):
     <g transform="translate({padding_x}, {y})">
       <text x="0" y="0" class="stat-icon">{icon}</text>
       <text x="25" y="0" class="stat-label">{label}:</text>
-      <text x="{card_width - padding_x * 2 - 10}" y="0" class="stat-value" text-anchor="end">{format_number(value)}</text>
+      <text x="{stats_area_width}" y="0" class="stat-value" text-anchor="end">{format_number(value)}</text>
+    </g>"""
+
+    # Rank badge - circle with progress ring
+    ring_cx = card_width - 70
+    ring_cy = card_height // 2 + 8
+    ring_r = 40
+    ring_circumference = 2 * 3.14159 * ring_r
+    progress_offset = ring_circumference * (1 - rank_score)
+
+    # Rank color based on rank
+    rank_colors = {
+        "S+": "#FFD700", "S": "#FFD700",
+        "A++": "#F5A623", "A+": "#F5A623", "A": "#F5A623",
+        "B+": "#4CAF50", "B": "#4CAF50",
+        "C": "#9f9f9f",
+    }
+    rank_color = rank_colors.get(rank_label, "#F5A623")
+
+    # Font size for rank label
+    rank_font_size = 28 if len(rank_label) <= 2 else 22
+
+    rank_badge = f"""
+    <g transform="translate(0, 0)">
+      <!-- Background ring -->
+      <circle cx="{ring_cx}" cy="{ring_cy}" r="{ring_r}"
+              fill="none" stroke="#333333" stroke-width="5" opacity="0.4"/>
+      <!-- Progress ring -->
+      <circle cx="{ring_cx}" cy="{ring_cy}" r="{ring_r}"
+              fill="none" stroke="{rank_color}" stroke-width="5"
+              stroke-dasharray="{ring_circumference}"
+              stroke-dashoffset="{progress_offset:.1f}"
+              stroke-linecap="round"
+              transform="rotate(-90 {ring_cx} {ring_cy})"
+              class="rank-ring"/>
+      <!-- Rank text -->
+      <text x="{ring_cx}" y="{ring_cy}" class="rank-text"
+            text-anchor="middle" dominant-baseline="central"
+            style="font-size: {rank_font_size}px; fill: {rank_color};">{rank_label}</text>
     </g>"""
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{card_width}" height="{card_height}" viewBox="0 0 {card_width} {card_height}">
@@ -144,9 +231,20 @@ def generate_svg(stats):
       .stat-icon {{
         font-size: 14px;
       }}
+      .rank-text {{
+        font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;
+        font-weight: 700;
+      }}
+      .rank-ring {{
+        animation: rankAnimation 1s ease-in-out forwards;
+      }}
       @keyframes fadeInAnimation {{
         from {{ opacity: 0; }}
         to {{ opacity: 1; }}
+      }}
+      @keyframes rankAnimation {{
+        from {{ stroke-dashoffset: {ring_circumference}; }}
+        to {{ stroke-dashoffset: {progress_offset:.1f}; }}
       }}
     </style>
   </defs>
@@ -156,6 +254,7 @@ def generate_svg(stats):
   <g transform="translate(0, 0)">
     <text x="{padding_x}" y="{title_y}" class="card-title">{name}'s GitHub Stats</text>
     {stat_rows}
+    {rank_badge}
   </g>
 </svg>"""
     return svg
@@ -178,6 +277,9 @@ def main():
     print(f"  🔀 PRs: {stats['prs']}")
     print(f"  🔴 Issues: {stats['issues']}")
     print(f"  📦 Contributed to: {stats['contributed_to']}")
+
+    rank_label, rank_score = calculate_rank(stats)
+    print(f"  🏅 Rank: {rank_label} (score: {rank_score:.2f})")
 
     svg = generate_svg(stats)
 
