@@ -65,7 +65,6 @@
 
 <p>
   <img align="center" height="180em" src="./assets/stats.svg" alt="suraj-yadav0" />
-  &nbsp;&nbsp;
   <img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" />
 </p>
 <!--
