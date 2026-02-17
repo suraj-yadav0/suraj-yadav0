@@ -63,10 +63,10 @@
 <!-- <h3 align="left">Stars</h3> -->
 <!-- <img align="left" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=suraj-yadav0&layout=compact&theme=transparent" alt=suraj-yadav0 /> -->
 
-<p>
-  <img align="center" height="180em" src="./assets/stats.svg" alt="suraj-yadav0" />
-  <img align="center" height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" />
-</p>
+<div align="center">
+  <img height="180em" src="./assets/stats.svg" alt="suraj-yadav0" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=suraj-yadav0&theme=highcontrast" alt="suraj-yadav0" />
+</div>
 <!--
  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h3 align="center">Statistics</h3>
 <div align="center">
