@@ -59,7 +59,7 @@
     <g transform="translate(25, 122)">
       <text x="0" y="0" class="stat-icon">🔀</text>
       <text x="25" y="0" class="stat-label">Total PRs:</text>
-      <text x="310" y="0" class="stat-value" text-anchor="end">189</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">190</text>
     </g>
     <g transform="translate(25, 147)">
       <text x="0" y="0" class="stat-icon">🔴</text>
