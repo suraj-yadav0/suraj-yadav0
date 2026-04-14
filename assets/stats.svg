@@ -36,7 +36,7 @@
       }
       @keyframes rankAnimation {
         from { stroke-dashoffset: 251.3272; }
-        to { stroke-dashoffset: 92.5; }
+        to { stroke-dashoffset: 92.2; }
       }
     </style>
   </defs>
@@ -59,12 +59,12 @@
     <g transform="translate(25, 122)">
       <text x="0" y="0" class="stat-icon">🔀</text>
       <text x="25" y="0" class="stat-label">Total PRs:</text>
-      <text x="310" y="0" class="stat-value" text-anchor="end">206</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">207</text>
     </g>
     <g transform="translate(25, 147)">
       <text x="0" y="0" class="stat-icon">🔴</text>
       <text x="25" y="0" class="stat-label">Total Issues:</text>
-      <text x="310" y="0" class="stat-value" text-anchor="end">27</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">28</text>
     </g>
     <g transform="translate(25, 172)">
       <text x="0" y="0" class="stat-icon">📦</text>
@@ -80,7 +80,7 @@
       <circle cx="425" cy="105" r="40"
               fill="none" stroke="#F5A623" stroke-width="5"
               stroke-dasharray="251.3272"
-              stroke-dashoffset="92.5"
+              stroke-dashoffset="92.2"
               stroke-linecap="round"
               transform="rotate(-90 425 105)"
               class="rank-ring"/>
