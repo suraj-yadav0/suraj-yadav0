@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **The first programming language was Fortran, developed in 1957 by IBM.**
+- ⚡ Fun fact **The average person blinks 20 times per minute, but only 7 times per minute when using a computer.**
 
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://github.com/suraj-yadav0" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
