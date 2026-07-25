@@ -35,7 +35,7 @@ def fetch_github_stats(username, token):
         followers {
           totalCount
         }
-        repositories(first: 100, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}) {
+        repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, orderBy: {direction: DESC, field: STARGAZERS}) {
           totalCount
           nodes {
             stargazers {
