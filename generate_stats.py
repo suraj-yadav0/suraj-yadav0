@@ -8,6 +8,52 @@ import os
 import sys
 import urllib.request
 import urllib.error
+import urllib.parse
+
+
+def fetch_public_repo_stars(username, token=None):
+    """Fetch total stars across public repositories using REST API."""
+    auth_tokens = [token, None] if token else [None]
+    last_error = None
+
+    for auth_token in auth_tokens:
+        total_stars = 0
+        page = 1
+        try:
+            while True:
+                url = (
+                    f"https://api.github.com/users/{urllib.parse.quote(username)}/repos"
+                    f"?type=owner&per_page=100&page={page}"
+                )
+                headers = {
+                    "Accept": "application/vnd.github+json",
+                    "User-Agent": "github-stats-generator",
+                }
+                if auth_token:
+                    headers["Authorization"] = f"bearer {auth_token}"
+
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req) as resp:
+                    repos = json.loads(resp.read().decode("utf-8"))
+
+                if not repos:
+                    break
+
+                total_stars += sum(repo.get("stargazers_count", 0) for repo in repos)
+                if len(repos) < 100:
+                    break
+                page += 1
+            return total_stars
+        except urllib.error.HTTPError as e:
+            last_error = e
+            if not auth_token or e.code not in (401, 403):
+                break
+
+    if last_error:
+        print(f"❌ GitHub REST API error while fetching stars: {last_error.code} {last_error.reason}")
+    else:
+        print("❌ Failed to fetch public repository stars")
+    sys.exit(1)
 
 
 def fetch_github_stats(username, token):
@@ -35,13 +81,8 @@ def fetch_github_stats(username, token):
         followers {
           totalCount
         }
-        repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, orderBy: {direction: DESC, field: STARGAZERS}) {
+        repositories(first: 1, ownerAffiliations: OWNER, privacy: PUBLIC) {
           totalCount
-          nodes {
-            stargazers {
-              totalCount
-            }
-          }
         }
       }
     }
@@ -69,7 +110,7 @@ def fetch_github_stats(username, token):
 
     user = data["data"]["user"]
     contrib = user["contributionsCollection"]
-    total_stars = sum(r["stargazers"]["totalCount"] for r in user["repositories"]["nodes"])
+    total_stars = fetch_public_repo_stars(username, token)
     total_commits = contrib["totalCommitContributions"] + contrib["restrictedContributionsCount"]
 
     return {
