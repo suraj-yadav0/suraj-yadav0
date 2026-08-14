@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **The QWERTY keyboard layout was designed to slow down typing to prevent typewriter jams.**
+- ⚡ Fun fact **The first alarm clock could only ring at 4 AM.**
 
 
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
