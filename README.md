@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **Python was named after Monty Python, not the snake.**
+- ⚡ Fun fact **The 'Save' icon is a floppy disk, which many young people have never seen.**
 
 
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
