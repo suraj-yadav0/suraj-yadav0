@@ -8,7 +8,7 @@
 - 🌐 Explore my portfolio: [**suraj-yadav0.github.io/portfolio-v4**](https://suraj-yadav0.github.io/portfolio-v4/)
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **Python was named after Monty Python, not the snake.**
+- ⚡ Fun fact **Google's original name was 'Backrub'.**
 
 <a href="https://suraj-yadav0.github.io/portfolio-v4/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
