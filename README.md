@@ -8,7 +8,7 @@
 - 🌐 Explore my portfolio: [**suraj-yadav0.github.io/portfolio-v4**](https://suraj-yadav0.github.io/portfolio-v4/)
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **NASA's Apollo 11 guidance computer had less processing power than a modern smartphone.**
+- ⚡ Fun fact **The first computer virus was created in 1983 and was called 'Elk Cloner'.**
 
 <a href="https://suraj-yadav0.github.io/portfolio-v4/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
