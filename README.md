@@ -8,7 +8,7 @@
 - 🌐 Explore my portfolio: [**suraj-yadav0.github.io/portfolio-v4**](https://suraj-yadav0.github.io/portfolio-v4/)
 - 💬 Ask me about **Flutter , NODE JS  , Python  , Linux , Ubuntu Touch, QML**
 - 📫 How to reach me **surajyadav200701@gmail.com**
-- ⚡ Fun fact **YouTube was originally designed as a video dating site.**
+- ⚡ Fun fact **The first computer mouse was made of wood and invented by Doug Engelbart in 1964.**
 
 <a href="https://suraj-yadav0.github.io/portfolio-v4/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/suraj-yadav-a63b3b220" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
