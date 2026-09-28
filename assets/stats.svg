@@ -36,7 +36,7 @@
       }
       @keyframes rankAnimation {
         from { stroke-dashoffset: 251.3272; }
-        to { stroke-dashoffset: 62.8; }
+        to { stroke-dashoffset: 63.0; }
       }
     </style>
   </defs>
@@ -80,14 +80,14 @@
       <circle cx="425" cy="105" r="40"
               fill="none" stroke="#F5A623" stroke-width="5"
               stroke-dasharray="251.3272"
-              stroke-dashoffset="62.8"
+              stroke-dashoffset="63.0"
               stroke-linecap="round"
               transform="rotate(-90 425 105)"
               class="rank-ring"/>
       <!-- Rank text -->
       <text x="425" y="105" class="rank-text"
             text-anchor="middle" dominant-baseline="central"
-            style="font-size: 22px; fill: #F5A623;">A++</text>
+            style="font-size: 28px; fill: #F5A623;">A+</text>
     </g>
   </g>
 </svg>
