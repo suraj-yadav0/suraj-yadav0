@@ -64,7 +64,7 @@
     <g transform="translate(25, 147)">
       <text x="0" y="0" class="stat-icon">🔴</text>
       <text x="25" y="0" class="stat-label">Total Issues:</text>
-      <text x="310" y="0" class="stat-value" text-anchor="end">164</text>
+      <text x="310" y="0" class="stat-value" text-anchor="end">165</text>
     </g>
     <g transform="translate(25, 172)">
       <text x="0" y="0" class="stat-icon">📦</text>
